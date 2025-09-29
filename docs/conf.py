@@ -36,7 +36,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.githubpages',
-    'sphinxcontrib.httpdomain',
     'myst_parser',
 ]
 
@@ -75,9 +74,9 @@ html_css_files = [
     'custom.css',
 ]
 
-# Logo and favicon
-html_logo = '_static/logo.png'
-html_favicon = '_static/favicon.ico'
+# Comment out logo and favicon for now
+# html_logo = '_static/logo.png'
+# html_favicon = '_static/favicon.ico'
 
 # -- Extension configuration -------------------------------------------------
 
@@ -116,10 +115,9 @@ autosummary_imported_members = True
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'django': ('https://docs.djangoproject.com/en/stable/', 'https://docs.djangoproject.com/en/stable/_objects/'),
-    'drf': ('https://www.django-rest-framework.org/', None),
 }
 
-# MyST settings
+# MyST settings - disable linkify to avoid dependency issues
 myst_enable_extensions = [
     "colon_fence",
     "deflist",
@@ -127,7 +125,6 @@ myst_enable_extensions = [
     "fieldlist",
     "html_admonition",
     "html_image",
-    "linkify",
     "replacements",
     "smartquotes",
     "strikethrough",

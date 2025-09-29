@@ -17,7 +17,7 @@ help:
 
 install:
 	@echo "Installing documentation dependencies..."
-	pip install sphinx sphinx-rtd-theme myst-parser sphinxcontrib-httpdomain
+	pip install sphinx sphinx-rtd-theme myst-parser sphinxcontrib-httpdomain sphinx-autodoc-typehints
 
 clean:
 	@echo "Cleaning documentation build..."
