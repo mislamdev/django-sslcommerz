@@ -1,0 +1,89 @@
+/* Custom CSS for Django SSLCOMMERZ Documentation */
+
+/* Brand colors */
+:root {
+    --sslcommerz-primary: #2980B9;
+    --sslcommerz-secondary: #3498DB;
+    --sslcommerz-success: #27AE60;
+    --sslcommerz-warning: #F39C12;
+    --sslcommerz-danger: #E74C3C;
+}
+
+/* Custom header styling */
+.wy-nav-top {
+    background: var(--sslcommerz-primary);
+}
+
+/* Code block improvements */
+.highlight {
+    border-left: 4px solid var(--sslcommerz-secondary);
+    margin: 1em 0;
+}
+
+/* Admonition styling */
+.admonition.note {
+    border-left: 4px solid var(--sslcommerz-primary);
+}
+
+.admonition.warning {
+    border-left: 4px solid var(--sslcommerz-warning);
+}
+
+.admonition.danger {
+    border-left: 4px solid var(--sslcommerz-danger);
+}
+
+/* API reference improvements */
+.py.class dt {
+    background: #f8f9fa;
+    border-left: 4px solid var(--sslcommerz-primary);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.py.method dt {
+    background: #f1f2f6;
+    border-left: 4px solid var(--sslcommerz-secondary);
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* Table improvements */
+table.docutils {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.docutils th {
+    background: var(--sslcommerz-primary);
+    color: white;
+    padding: 10px;
+}
+
+table.docutils td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Navigation improvements */
+.wy-menu-vertical a {
+    padding: 6px 16px;
+}
+
+.wy-menu-vertical .current > a {
+    border-right: 4px solid var(--sslcommerz-primary);
+}
+
+/* Footer styling */
+.rst-footer-buttons {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+    .wy-nav-content {
+        padding: 1rem;
+    }
+}

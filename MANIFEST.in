@@ -1,0 +1,14 @@
+include README.md
+include LICENSE
+include requirements.txt
+include .env.example
+include example_settings.py
+include example_urls.py
+include examples.py
+recursive-include sslcommerz/templates *
+recursive-include sslcommerz/static *
+recursive-include sslcommerz/migrations *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .DS_Store
+
