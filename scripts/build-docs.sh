@@ -31,12 +31,7 @@ print_error() {
 install_docs_deps() {
     print_status "Installing documentation dependencies..."
 
-    pip install -q \
-        sphinx \
-        sphinx-rtd-theme \
-        myst-parser \
-        sphinxcontrib-httpdomain \
-        sphinx-autodoc-typehints
+    pip install -q -r docs/requirements.txt
 
     print_success "Documentation dependencies installed"
 }
